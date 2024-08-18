@@ -1,6 +1,6 @@
-// File: coffaiApp.swift
+// File: GrindData.swift
 // Package: coffai
-// Created: 13/08/2024
+// Created: 18/08/2024
 //
 // MIT License
 // 
@@ -24,19 +24,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import SwiftUI
+import Foundation
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
+enum GroundLevel: String, Codable, CaseIterable {
+    case Finest
+    case Fine
+    case Medium
+    case Coarse
+    case Coarsest
+}
+
+@Model
+class GrindData: Hashable {
+    var roast: RoastData?
+    var ground_date: Date
+    var ground_level: GroundLevel
+    var notes: String
+    
+    // TODO: images
+    
+    var label: String {
+        let roast = roast == nil ? "unknown roast" : roast!.label
+        let date = ground_date.formatted(date: .abbreviated, time: .omitted)
+        return "\(roast) ground on \(date) (\(ground_level))"
+    }
+    
+    init() {
+        self.roast = nil
+        self.ground_date = .now
+        self.ground_level = .Medium
+        self.notes = ""
     }
 }

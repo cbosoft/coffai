@@ -11,6 +11,25 @@
 		830C148C2C6BD9C800F89F83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C148B2C6BD9C800F89F83 /* ContentView.swift */; };
 		830C148E2C6BD9CB00F89F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830C148D2C6BD9CB00F89F83 /* Assets.xcassets */; };
 		830C14912C6BD9CB00F89F83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830C14902C6BD9CB00F89F83 /* Preview Assets.xcassets */; };
+		830C14982C6BE35600F89F83 /* RoastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C14972C6BE35600F89F83 /* RoastData.swift */; };
+		830C149A2C6BE35C00F89F83 /* BrewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C14992C6BE35C00F89F83 /* BrewData.swift */; };
+		830C149C2C6BE42000F89F83 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C149B2C6BE42000F89F83 /* BrewMethod.swift */; };
+		830C149E2C6BE52C00F89F83 /* EditRoastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C149D2C6BE52C00F89F83 /* EditRoastView.swift */; };
+		830C14A02C6BEC2300F89F83 /* RoastsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C149F2C6BEC2300F89F83 /* RoastsView.swift */; };
+		830C14A42C6BF81200F89F83 /* EditRoasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C14A32C6BF81200F89F83 /* EditRoasterView.swift */; };
+		830C14A62C6BF86B00F89F83 /* RoasterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C14A52C6BF86B00F89F83 /* RoasterData.swift */; };
+		830C14A92C6BFF8D00F89F83 /* RoastersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C14A82C6BFF8D00F89F83 /* RoastersView.swift */; };
+		837DE1032C70DCAC001B6E99 /* BrewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837DE1022C70DCAC001B6E99 /* BrewsView.swift */; };
+		837DE1052C70E020001B6E99 /* BrewMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837DE1042C70E020001B6E99 /* BrewMethodsView.swift */; };
+		837DE1072C70E125001B6E99 /* EditBrewMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837DE1062C70E125001B6E99 /* EditBrewMethodView.swift */; };
+		83FA704C2C71011700A7CCD3 /* EditBrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA704B2C71011700A7CCD3 /* EditBrewView.swift */; };
+		83FA704E2C71109B00A7CCD3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA704D2C71109B00A7CCD3 /* FeedView.swift */; };
+		83FA70502C71DC1300A7CCD3 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA704F2C71DC1300A7CCD3 /* DebugView.swift */; };
+		83FA70522C720DFD00A7CCD3 /* GrindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA70512C720DFD00A7CCD3 /* GrindData.swift */; };
+		83FA70542C720E5700A7CCD3 /* GrindsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA70532C720E5700A7CCD3 /* GrindsView.swift */; };
+		83FA70562C7251F100A7CCD3 /* EditGrindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA70552C7251F100A7CCD3 /* EditGrindView.swift */; };
+		83FA70582C725A5600A7CCD3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA70572C725A5600A7CCD3 /* RatingView.swift */; };
+		83FA705A2C72874900A7CCD3 /* FlavourNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA70592C72874900A7CCD3 /* FlavourNotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +38,25 @@
 		830C148B2C6BD9C800F89F83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		830C148D2C6BD9CB00F89F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830C14902C6BD9CB00F89F83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		830C14972C6BE35600F89F83 /* RoastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastData.swift; sourceTree = "<group>"; };
+		830C14992C6BE35C00F89F83 /* BrewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewData.swift; sourceTree = "<group>"; };
+		830C149B2C6BE42000F89F83 /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
+		830C149D2C6BE52C00F89F83 /* EditRoastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRoastView.swift; sourceTree = "<group>"; };
+		830C149F2C6BEC2300F89F83 /* RoastsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastsView.swift; sourceTree = "<group>"; };
+		830C14A32C6BF81200F89F83 /* EditRoasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRoasterView.swift; sourceTree = "<group>"; };
+		830C14A52C6BF86B00F89F83 /* RoasterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasterData.swift; sourceTree = "<group>"; };
+		830C14A82C6BFF8D00F89F83 /* RoastersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastersView.swift; sourceTree = "<group>"; };
+		837DE1022C70DCAC001B6E99 /* BrewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewsView.swift; sourceTree = "<group>"; };
+		837DE1042C70E020001B6E99 /* BrewMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethodsView.swift; sourceTree = "<group>"; };
+		837DE1062C70E125001B6E99 /* EditBrewMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBrewMethodView.swift; sourceTree = "<group>"; };
+		83FA704B2C71011700A7CCD3 /* EditBrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBrewView.swift; sourceTree = "<group>"; };
+		83FA704D2C71109B00A7CCD3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		83FA704F2C71DC1300A7CCD3 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		83FA70512C720DFD00A7CCD3 /* GrindData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindData.swift; sourceTree = "<group>"; };
+		83FA70532C720E5700A7CCD3 /* GrindsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindsView.swift; sourceTree = "<group>"; };
+		83FA70552C7251F100A7CCD3 /* EditGrindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGrindView.swift; sourceTree = "<group>"; };
+		83FA70572C725A5600A7CCD3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		83FA70592C72874900A7CCD3 /* FlavourNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavourNotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +73,7 @@
 		830C147D2C6BD9C800F89F83 = {
 			isa = PBXGroup;
 			children = (
+				83FA70592C72874900A7CCD3 /* FlavourNotesView.swift */,
 				830C14882C6BD9C800F89F83 /* coffai */,
 				830C14872C6BD9C800F89F83 /* Products */,
 			);
@@ -51,10 +90,12 @@
 		830C14882C6BD9C800F89F83 /* coffai */ = {
 			isa = PBXGroup;
 			children = (
+				838F3E642C6D4F6400612910 /* Views */,
+				830C14A72C6BF98B00F89F83 /* Data */,
 				830C14892C6BD9C800F89F83 /* coffaiApp.swift */,
-				830C148B2C6BD9C800F89F83 /* ContentView.swift */,
 				830C148D2C6BD9CB00F89F83 /* Assets.xcassets */,
 				830C148F2C6BD9CB00F89F83 /* Preview Content */,
+				83FA70572C725A5600A7CCD3 /* RatingView.swift */,
 			);
 			path = coffai;
 			sourceTree = "<group>";
@@ -65,6 +106,38 @@
 				830C14902C6BD9CB00F89F83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		830C14A72C6BF98B00F89F83 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				830C14992C6BE35C00F89F83 /* BrewData.swift */,
+				830C14972C6BE35600F89F83 /* RoastData.swift */,
+				830C14A52C6BF86B00F89F83 /* RoasterData.swift */,
+				830C149B2C6BE42000F89F83 /* BrewMethod.swift */,
+				83FA70512C720DFD00A7CCD3 /* GrindData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		838F3E642C6D4F6400612910 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				830C149F2C6BEC2300F89F83 /* RoastsView.swift */,
+				830C14A82C6BFF8D00F89F83 /* RoastersView.swift */,
+				837DE1022C70DCAC001B6E99 /* BrewsView.swift */,
+				830C148B2C6BD9C800F89F83 /* ContentView.swift */,
+				830C14A32C6BF81200F89F83 /* EditRoasterView.swift */,
+				830C149D2C6BE52C00F89F83 /* EditRoastView.swift */,
+				83FA70552C7251F100A7CCD3 /* EditGrindView.swift */,
+				837DE1042C70E020001B6E99 /* BrewMethodsView.swift */,
+				83FA704B2C71011700A7CCD3 /* EditBrewView.swift */,
+				837DE1062C70E125001B6E99 /* EditBrewMethodView.swift */,
+				83FA704D2C71109B00A7CCD3 /* FeedView.swift */,
+				83FA704F2C71DC1300A7CCD3 /* DebugView.swift */,
+				83FA70532C720E5700A7CCD3 /* GrindsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +210,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830C14A02C6BEC2300F89F83 /* RoastsView.swift in Sources */,
+				83FA70522C720DFD00A7CCD3 /* GrindData.swift in Sources */,
+				83FA705A2C72874900A7CCD3 /* FlavourNotesView.swift in Sources */,
+				830C14A42C6BF81200F89F83 /* EditRoasterView.swift in Sources */,
+				83FA70582C725A5600A7CCD3 /* RatingView.swift in Sources */,
+				837DE1032C70DCAC001B6E99 /* BrewsView.swift in Sources */,
+				830C149E2C6BE52C00F89F83 /* EditRoastView.swift in Sources */,
+				83FA704C2C71011700A7CCD3 /* EditBrewView.swift in Sources */,
+				830C14982C6BE35600F89F83 /* RoastData.swift in Sources */,
+				830C14A62C6BF86B00F89F83 /* RoasterData.swift in Sources */,
+				830C14A92C6BFF8D00F89F83 /* RoastersView.swift in Sources */,
+				83FA70562C7251F100A7CCD3 /* EditGrindView.swift in Sources */,
+				837DE1072C70E125001B6E99 /* EditBrewMethodView.swift in Sources */,
+				837DE1052C70E020001B6E99 /* BrewMethodsView.swift in Sources */,
+				83FA704E2C71109B00A7CCD3 /* FeedView.swift in Sources */,
+				830C149C2C6BE42000F89F83 /* BrewMethod.swift in Sources */,
+				83FA70502C71DC1300A7CCD3 /* DebugView.swift in Sources */,
 				830C148C2C6BD9C800F89F83 /* ContentView.swift in Sources */,
 				830C148A2C6BD9C800F89F83 /* coffaiApp.swift in Sources */,
+				830C149A2C6BE35C00F89F83 /* BrewData.swift in Sources */,
+				83FA70542C720E5700A7CCD3 /* GrindsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +379,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cbosoft.coffai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,6 +412,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cbosoft.coffai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

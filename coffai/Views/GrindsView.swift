@@ -1,6 +1,6 @@
-// File: coffaiApp.swift
+// File: GrindsView.swift
 // Package: coffai
-// Created: 13/08/2024
+// Created: 18/08/2024
 //
 // MIT License
 // 
@@ -25,18 +25,28 @@
 // SOFTWARE.
 
 import SwiftUI
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct GrindsView: View {
+    @Query var grinds: [GrindData]
+    @Environment(\.modelContext) var modelContext
+    
+    var body: some View {
+        List {
+            NavigationLink("Grind some beans") {
+                EditGrindView()
+            }.foregroundStyle(Color.gray)
+            ForEach(grinds) { grind in
+                NavigationLink {
+                    EditGrindView(grind: grind)
+                } label: {
+                    Text(grind.label)
+                }
+            }.onDelete(perform: { indexSet in
+                for i in indexSet {
+                    modelContext.delete(grinds[i])
+                }
+            })
         }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
     }
 }

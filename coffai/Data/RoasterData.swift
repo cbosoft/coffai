@@ -1,4 +1,4 @@
-// File: coffaiApp.swift
+// File: RoasterData.swift
 // Package: coffai
 // Created: 13/08/2024
 //
@@ -24,19 +24,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import SwiftUI
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
+
+@Model
+class RoasterData: Hashable {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
     }
 }

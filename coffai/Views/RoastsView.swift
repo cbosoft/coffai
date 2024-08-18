@@ -1,4 +1,4 @@
-// File: coffaiApp.swift
+// File: RoastsView.swift
 // Package: coffai
 // Created: 13/08/2024
 //
@@ -25,18 +25,34 @@
 // SOFTWARE.
 
 import SwiftUI
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct RoastsView: View {
+    @Query var roasts: [RoastData]
+    @Environment(\.modelContext) var modelContext
+    
+    var body: some View {
+        List {
+            NavigationLink("Add Roast") {
+                EditRoastView()
+            }.foregroundStyle(Color.gray)
+            ForEach(roasts) { roast in
+                NavigationLink {
+                    EditRoastView(roast_data: roast)
+                } label: {
+                    HStack {
+                        Image(systemName: "flame")
+                        VStack(alignment: .leading) {
+                            Text(roast.name).font(.headline).bold()
+                            Text(roast.subheading).font(.subheadline)
+                        }
+                    }
+                }
+            }.onDelete(perform: { indexSet in
+                for i in indexSet {
+                    modelContext.delete(roasts[i])
+                }
+            })
         }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
     }
 }

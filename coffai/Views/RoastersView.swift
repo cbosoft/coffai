@@ -1,4 +1,4 @@
-// File: ContentView.swift
+// File: RoastersView.swift
 // Package: coffai
 // Created: 13/08/2024
 //
@@ -25,19 +25,26 @@
 // SOFTWARE.
 
 import SwiftUI
+import SwiftData
 
-struct ContentView: View {
+struct RoastersView: View {
+    @Query var roasters: [RoasterData]
+    @Environment(\.modelContext) var modelContext
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            NavigationLink("Add Roaster") {
+                EditRoasterView()
+            }.foregroundStyle(Color.gray)
+            ForEach(roasters) { roaster in
+                NavigationLink("\(roaster.name)") {
+                    EditRoasterView(roaster: roaster)
+                }
+            }.onDelete(perform: { indexSet in
+                for i in indexSet {
+                    modelContext.delete(roasters[i])
+                }
+            })
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

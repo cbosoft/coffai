@@ -1,4 +1,4 @@
-// File: coffaiApp.swift
+// File: ContentView.swift
 // Package: coffai
 // Created: 13/08/2024
 //
@@ -26,17 +26,13 @@
 
 import SwiftUI
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
+struct ContentView: View {
+    
+    var body: some View {
+        FeedView()
     }
+}
+
+#Preview {
+    ContentView()
 }

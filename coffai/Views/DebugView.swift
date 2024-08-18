@@ -1,6 +1,6 @@
-// File: coffaiApp.swift
+// File: DebugView.swift
 // Package: coffai
-// Created: 13/08/2024
+// Created: 18/08/2024
 //
 // MIT License
 // 
@@ -26,17 +26,24 @@
 
 import SwiftUI
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct DebugView : View {
+    @Environment(\.modelContext) var modelContext
+    
+    func refresh() {
+        do {
+            try modelContext.delete(model: BrewData.self)
+            try modelContext.delete(model: BrewMethod.self)
+            try modelContext.delete(model: GrindData.self)
+            try modelContext.delete(model: RoastData.self)
+            try modelContext.delete(model: RoasterData.self)
+        } catch {
+            print("Failed to clear data: \(error.localizedDescription)")
         }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
+    }
+    
+    var body: some View {
+        Button(action: refresh) {
+            Label("Delete all data", systemImage: "trash")
+        }
     }
 }

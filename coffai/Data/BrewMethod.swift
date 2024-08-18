@@ -1,4 +1,4 @@
-// File: coffaiApp.swift
+// File: BrewMethod.swift
 // Package: coffai
 // Created: 13/08/2024
 //
@@ -24,19 +24,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import SwiftUI
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
+// General brew method name and parameters
+// V60, cafetiere, cleverdripper, aeropress, espresso, ...
+@Model
+class BrewMethod: Hashable {
+    var name: String
+    var method_description: String
+    
+    init() {
+        self.name = ""
+        self.method_description = ""
     }
 }

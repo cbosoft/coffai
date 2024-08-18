@@ -1,6 +1,6 @@
-// File: coffaiApp.swift
+// File: BrewMethodsView.swift
 // Package: coffai
-// Created: 13/08/2024
+// Created: 17/08/2024
 //
 // MIT License
 // 
@@ -25,18 +25,26 @@
 // SOFTWARE.
 
 import SwiftUI
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct BrewMethodsView: View {
+    @Query var methods: [BrewMethod]
+    @Environment(\.modelContext) var modelContext
+    
+    var body: some View {
+        List {
+            NavigationLink("Add Method") {
+                EditBrewMethodView()
+            }.foregroundStyle(Color.gray)
+            ForEach(methods) { method in
+                NavigationLink("\(method.name)") {
+                    EditBrewMethodView(method: method)
+                }
+            }.onDelete(perform: { indexSet in
+                for i in indexSet {
+                    modelContext.delete(methods[i])
+                }
+            })
         }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
     }
 }

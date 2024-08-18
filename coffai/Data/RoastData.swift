@@ -1,4 +1,4 @@
-// File: coffaiApp.swift
+// File: RoastData.swift
 // Package: coffai
 // Created: 13/08/2024
 //
@@ -24,19 +24,40 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import SwiftUI
+import Foundation
+import SwiftData
 
-@main
-struct coffaiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+
+enum RoastLevel: String, CaseIterable, Codable {
+    case Dark
+    case Medium
+    case Light
+}
+
+@Model
+class RoastData: Identifiable {
+    var name: String = "(a roast)"
+    var roaster: RoasterData? = nil
+    var processing: String? = nil
+    var origin: String? = nil
+    var roast_level: RoastLevel = RoastLevel.Medium
+    var roast_date: Date = Date.now
+    var brews: [BrewData] = []
+    
+    init() { }
+    
+    var label: String {
+        get {
+            let roaster_name = self.roaster?.name ?? "unkown roaster"
+            return "\(self.name) (\(roaster_name))"
         }
-        .modelContainer(for: [
-            RoasterData.self,
-            RoastData.self,
-            BrewData.self,
-            BrewMethod.self,
-        ])
+    }
+    
+    var subheading: String {
+        get {
+            let roaster_name = self.roaster?.name ?? "unkown roaster"
+            let date = self.roast_date.formatted(date: .abbreviated, time: .omitted)
+            return "\(roaster_name) on \(date)"
+        }
     }
 }

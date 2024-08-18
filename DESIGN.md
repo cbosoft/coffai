@@ -1,0 +1,13 @@
+- Ingest measurements from new cup of coffee:
+  - ratio (mass grounds / mass water)
+  - bean details
+  - brew method
+  - can include pic of ground beans - possibly to obtain PSD if relevant
+- Brew method details
+  - generic form for defining new brew method?
+- bean details
+  - form accepting text fields and photos where appropriate
+  - roaster name
+  - processing (washed, fermented, ...)
+  - roast level (light/medium/dark)
+  - bean picture - possibly to obtain PSD if relevant
